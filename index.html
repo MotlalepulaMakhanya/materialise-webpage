@@ -109,9 +109,10 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
     <header>
         <div class="row center-align">
@@ -119,7 +120,8 @@
                 <h1 class="center-align">Personal Webpage</h1>
             </div>
             <div class="col l4 m6 s12" id="fullName">{{user.fullName}}</div>
-            <div class="col l4 m6 s12"><img src="{{user.photo}}" width="200" alt="{{user.fullName}}" class="images"></div>
+            <div class="col l4 m6 s12"><img src="{{user.photo}}" width="200" alt="{{user.fullName}}" class="images">
+            </div>
         </div>
     </header>
     <div class="row center-align #f1f8e9 light-green lighten-5">
@@ -153,19 +155,22 @@
     </div>
     <style>
         body {
-background-image: url(images/table-mountain-feature-onsite-2.webp);
+            background-image: url(images/table-mountain-feature-onsite-2.webp);
         }
+
         @media (max-width: 600px) {
-        .mid-text {
-            float: right !important;
+            .mid-text {
+                float: right !important;
+            }
         }
-    }
-    .mid-text-img {
-        float: left !important;
-    }
-    p {
-        font-size: 15px;
-    }
+
+        .mid-text-img {
+            float: left !important;
+        }
+
+        p {
+            font-size: 15px;
+        }
     </style>
     <div class="#f1f8e9 light-green lighten-5">
         <h2 class="center-align">My favourite Subjects</h2>
@@ -183,4 +188,5 @@ background-image: url(images/table-mountain-feature-onsite-2.webp);
         </div>
     </div>
 </body>
+
 </html>
