@@ -2,16 +2,13 @@ import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 import data from './data.json' assert { type: 'json' };
 
-export default defineConfig({
-  base: '/responsive_webpages/',
-  build: {
-    rollupOptions: {
-      input: {
-        main: 'index.html',
-      }
-    }
-  },
+export default {
+  base: '/responsive_webpages/',   // <-- add this
   plugins: [handlebars({
-    context: data
-  })]
-});
+    context:
+      /*
+      previous setup here
+      */
+      data   // add this  
+  })],
+};
