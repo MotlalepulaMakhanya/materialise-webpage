@@ -1,0 +1,181 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+      
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+            <div class="row center-align">
+                <div class="col s12 #ffc107 amber block"><h1 class="center-align">Personal Webpage</h1></div>
+                <div class="col l4 m6 s12" id="fullName">{{user.fullName}}</div>
+                <div class="col l4 m6 s12"><img src="images/Makhanya.jpg" width="200" alt="Motlalepula Makhanya" class="images"></div>
+            </div>
+        </header>
+        <div class="row center-align #f1f8e9 light-green lighten-5">
+            <h1 class="center-align">My Favourite City</h1>
+            <h1>{{city.name}}</h1>
+            <div class="col l4 m6 s12"><img src="images/Cape Town.jpg" width="300" alt="Cape Town"></div>
+            <div class="col l4 m6 s12"><p>I would love to visit Cape Town because it is a dream destination for many people, viewing the Table Mountain and the sea are some of the things that attract me a lot. It is one of the biggest cities in Africa.With such a varying landscape - found in very few other places across the globe - Cape Town offers forests, beaches, gardens, mountains, oceans, grasslands, nature reserves, Winelands, as well as one of the most unique floral biomes in the world - fynbos</p></div>
+        </div>
+        <div class="block">
+            <h2 class="center-align">Foreign Language</h2>
+        </div>
+        <div class="#ffc107 amber">
+            <table>
+            
+                <thead>
+                    <tr>
+                        <th>French</th>
+                        <th>English</th>
+                    </tr>
+                </thead>
+        
+                <tbody>   
+                    <tr>
+                        <td>Bonsoir</td>
+                        <td>Good Evening</td>
+                    </tr>
+                    <tr>
+                        <td>S'il vous plaît</td>
+                        <td>Please</td>
+                    </tr>
+                    <tr>
+                        <td>Merci</td>
+                        <td>Thank you</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <style>
+            body {
+  background-image: url(images/table-mountain-feature-onsite-2.webp);
+            }
+            @media (max-width: 600px) {
+            .mid-text {
+                float: right !important;
+            }
+        }
+        .mid-text-img {
+            float: left !important;
+        }
+        p {
+            font-size: 15px;
+        }
+        </style>
+
+        <div class="#f1f8e9 light-green lighten-5">
+            <h2 class="center-align ">My favourite Subjects</h2>
+            <h3>I studied Bachelor of Engineering Technology in Electrical Engineering at University of Johannesburg</h3>
+            <div class="row">
+                <div class="col l4 m6 s12">
+                    <div class="row">
+                        <h3 class="center-align">Full Stack Web Development</h3>
+                        <p class="col s6">I love this course because I learn more coding skills and languages such as HTML, CSS, JavaScript, and many more that I still have yet to learn. My mentors are amazing.</p>
+                        <img src="images/fullstack.png" width="150" alt="Full Stack web development" class="images col s6">
+                    </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <div class="row">
+                        <h3 class="center-align">Agile Rapid Skills Acquisition</h3>
+                        <p class="col s6 mid-text">I love this course because I learn more coding skills and languages such as HTML, CSS, JavaScript, and many more that I still have yet to learn. My mentors are amazing.</p>
+                        <img src="images/agile.png" width="150" alt="Agile Rapid Skills Acquisition" class="images col s6 mid-text-img">
+                    </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <div class="row">
+                        <h3 class="center-align">Engineering Technologies Bootcamps</h3>
+                        <p class="col s6">I love this course because I learned more about machine learning and artificial intelligence. I also learned how to use Python to process datasets, and I now know a lot about the technology advancements and all the Industrial Revolution concepts.</p>
+                        <img src="./images/technology bootcamps.jpg" width="150" alt="Engineering Technologies Bootcamps" class="images col s6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    </body>
+</html>-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <header>
+        <div class="row center-align">
+            <div class="col s12 #ffc107 amber block">
+                <h1 class="center-align">Personal Webpage</h1>
+            </div>
+            <div class="col l4 m6 s12" id="fullName">{{user.fullName}}</div>
+            <div class="col l4 m6 s12"><img src="{{user.photo}}" width="200" alt="{{user.fullName}}" class="images"></div>
+        </div>
+    </header>
+    <div class="row center-align #f1f8e9 light-green lighten-5">
+        <h1 class="center-align">My Favourite City</h1>
+        <h1>{{city.name}}</h1>
+        <div class="col l4 m6 s12"><img src="{{city.photo}}" width="300" alt="{{city.name}}"></div>
+        <div class="col l4 m6 s12">
+            <p>{{city.description}}</p>
+        </div>
+    </div>
+    <div class="block">
+        <h2 class="center-align">Foreign Language</h2>
+    </div>
+    <div class="#ffc107 amber">
+        <table>
+            <thead>
+                <tr>
+                    <th>French</th>
+                    <th>English</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    <td>{{this.foreignLanguage}}</td>
+                    <td>{{this.englishPhrase}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <style>
+        body {
+background-image: url(images/table-mountain-feature-onsite-2.webp);
+        }
+        @media (max-width: 600px) {
+        .mid-text {
+            float: right !important;
+        }
+    }
+    .mid-text-img {
+        float: left !important;
+    }
+    p {
+        font-size: 15px;
+    }
+    </style>
+    <div class="#f1f8e9 light-green lighten-5">
+        <h2 class="center-align">My favourite Subjects</h2>
+        <h3>I studied Bachelor of Engineering Technology in Electrical Engineering at University of Johannesburg</h3>
+        <div class="row">
+            {{#each favouriteSubjects}}
+            <div class="col l4 m6 s12">
+                <div class="row">
+                    <h3 class="center-align">{{this.name}}</h3>
+                    <p class="col s6">{{this.description}}</p>
+                    <img src="{{this.photo}}" width="150" alt="{{this.name}}" class="images col s6">
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</body>
+</html>

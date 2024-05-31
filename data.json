@@ -1,0 +1,41 @@
+{
+    "user": {
+        "fullName": "Motlalepula Makhanya",
+        "photo": "./images/Makhanya.jpg"
+    },
+    "city": {
+        "name": "Cape Town",
+        "photo": "./images/Cape Town.jpg",
+        "description": "I would love to visit Cape Town because it is a dream destination for many people, viewing the Table Mountain and the sea are some of the things that attract me a lot. It is one of the biggest cities in Africa.With such a varying landscape - found in very few other places across the globe - Cape Town offers forests, beaches, gardens, mountains, oceans, grasslands, nature reserves, Winelands, as well as one of the most unique floral biomes in the world - fynbos"
+    },
+    "foreignLanguage": {
+        "language": "French",
+        "phrases": [
+            {
+                "englishPhrase": "Good Evening",
+                "foreignLanguage": "Bonsoir"
+            },
+            {
+                "englishPhrase": "Thank you",
+                "foreignLanguage": "Merci"
+            }
+        ]
+    },
+    "favouriteSubjects": [
+        {
+            "name": "Full Stack Web Development",
+            "description": "I love this course because I learn more coding skills and languages such as HTML, CSS, JavaScript, and many more that I still have yet to learn. My mentors are amazing.",
+            "photo" : "./images/fullstack.png"
+        },
+        {
+            "name": "Agile Rapid Skills Acquisition",
+            "description": "I love this course because I learn more coding skills and languages such as HTML, CSS, JavaScript, and many more that I still have yet to learn. My mentors are amazing.",
+            "photo" : "./images/agile.png"
+        },
+        {
+            "name": "Engineering Technologies Bootcamps",
+            "description": "I love this course because I learned more about machine learning and artificial intelligence. I also learned how to use Python to process datasets, and I now know a lot about the technology advancements and all the Industrial Revolution concepts.",
+            "photo": "./images/technology bootcamps.jpg"
+        }
+    ]
+}
