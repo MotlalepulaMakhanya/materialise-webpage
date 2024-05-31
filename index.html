@@ -158,14 +158,14 @@
             background-image: url(images/table-mountain-feature-onsite-2.webp);
         }
 
-        @media screen and (max-width: 960px) {
+        @media (max-width: 600px) {
             .mid-text {
-                order: 1;
+                float: right !important;
             }
+        }
 
-            .name {
-                display: block;
-            }
+        .mid-text-img {
+            float: left !important;
         }
 
         p {
@@ -175,18 +175,35 @@
     <div class="#f1f8e9 light-green lighten-5">
         <h2 class="center-align">My favourite Subjects</h2>
         <h3>I studied Bachelor of Engineering Technology in Electrical Engineering at University of Johannesburg</h3>
+
         <div class="row">
-            {{#each favouriteSubjects}}
             <div class="col l4 m6 s12">
                 <div class="row">
-                    <h3 class="center-align">{{this.name}}</h3>
-                    <p class="col s6 mid-text">{{this.description}}</p>
-                    <img src="{{this.photo}}" width="150" alt="{{this.name}}" class="images col s6 mid-text-img">
+                    <h3 class="center-align">{{favouriteSubjects.0.name}}</h3>
+                    <p class="col s6">{{favouriteSubjects.0.description}}</p>
+                    <img src="{{favouriteSubjects.0.photo}}" width="150" alt="{{favouriteSubjects.0.name}}"
+                        class="images col s6">
                 </div>
             </div>
-            {{/each}}
+            <div class="col l4 m6 s12">
+                <div class="row">
+                    <h3 class="center-align">{{favouriteSubjects.1.name}}</h3>
+                    <p class="col s6 mid-text">{{favouriteSubjects.1.description}}</p>
+                    <img src="{{favouriteSubjects.1.photo}}" width="150" alt="{{favouriteSubjects.1.name}}"
+                        class="images col s6 mid-text-img">
+                </div>
+            </div>
+            <div class="col l4 m6 s12">
+                <div class="row">
+                    <h3 class="center-align">{{favouriteSubjects.2.name}}</h3>
+                    <p class="col s6">{{favouriteSubjects.2.description}}</p>
+                    <img src="{{favouriteSubjects.2.photo}}" width="150" alt="{{favouriteSubjects.2.name}}"
+                        class="images col s6">
+                </div>
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>
